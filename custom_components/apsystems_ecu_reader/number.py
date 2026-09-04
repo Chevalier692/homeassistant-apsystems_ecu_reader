@@ -95,7 +95,7 @@ class ECUPowerLimitNumber(CoordinatorEntity, RestoreNumber):
         self._attr_name = f"ECU {ecu.ecu.ecu_id} Power Limit"
         self._attr_unique_id = f"{ecu.ecu.ecu_id}_power_limit"
         self._attr_native_min_value = 0
-        self._attr_native_max_value = 3
+        self._attr_native_max_value = 10
         self._attr_native_step = 0.1
         self._attr_native_value = 0
         self._attr_device_class = "power"
